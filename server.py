@@ -15,7 +15,9 @@ def get_data():
     text = '''Then, here are your options:
               /nb_articles : Show the number of articles scrapped
               /scraped_data : Show the data scrapped 
-              /date_articles : Show the dates of all the articles'''
+              /date_articles : Show the dates of all the articles
+              /articles : Show the list of articles on the website
+              /articles/<number> : Choose one article and show the info'''
     return Response(text, mimetype='text/plain')
 
 @app.route('/nb_articles')  

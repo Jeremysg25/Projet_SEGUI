@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
-import json  # Import du module json
+import json
 
 def scrape_articles():
     url = 'https://paperswithcode.com/'
