@@ -1,18 +1,33 @@
 [
     {
-        "title": "Magic Clothing: Controllable Garment-Driven Image Synthesis",
-        "url": "https://paperswithcode.com/paper/magic-clothing-controllable-garment-driven",
-        "date": "2024-04-15"
+        "title": "ID-Animator: Zero-Shot Identity-Preserving Human Video Generation",
+        "url": "https://paperswithcode.com/paper/id-animator-zero-shot-identity-preserving",
+        "date": "2024-04-23"
     },
     {
-        "title": "MyGO: Discrete Modality Information as Fine-Grained Tokens for Multi-modal Knowledge Graph Completion",
-        "url": "https://paperswithcode.com/paper/mygo-discrete-modality-information-as-fine",
-        "date": "2024-04-15"
+        "title": "OpenELM: An Efficient Language Model Family with Open-source Training and Inference Framework",
+        "url": "https://paperswithcode.com/paper/openelm-an-efficient-language-model-family",
+        "date": "2024-04-22"
     },
     {
-        "title": "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
-        "url": "https://paperswithcode.com/paper/megalodon-efficient-llm-pretraining-and",
-        "date": "2024-04-12"
+        "title": "SnapKV: LLM Knows What You are Looking for Before Generation",
+        "url": "https://paperswithcode.com/paper/snapkv-llm-knows-what-you-are-looking-for",
+        "date": "2024-04-22"
+    },
+    {
+        "title": "CyberSecEval 2: A Wide-Ranging Cybersecurity Evaluation Suite for Large Language Models",
+        "url": "https://paperswithcode.com/paper/cyberseceval-2-a-wide-ranging-cybersecurity",
+        "date": "2024-04-19"
+    },
+    {
+        "title": "AutoCrawler: A Progressive Understanding Web Agent for Web Crawler Generation",
+        "url": "https://paperswithcode.com/paper/autocrawler-a-progressive-understanding-web",
+        "date": "2024-04-19"
+    },
+    {
+        "title": "Dynamic Generation of Personalities with Large Language Models",
+        "url": "https://paperswithcode.com/paper/dynamic-generation-of-personalities-with",
+        "date": "2024-04-10"
     },
     {
         "title": "InstantMesh: Efficient 3D Mesh Generation from a Single Image with Sparse-view Large Reconstruction Models",
@@ -20,33 +35,13 @@
         "date": "2024-04-10"
     },
     {
-        "title": "LM Transparency Tool: Interactive Tool for Analyzing Transformer Language Models",
-        "url": "https://paperswithcode.com/paper/lm-transparency-tool-interactive-tool-for",
-        "date": "2024-04-10"
+        "title": "Improving Diffusion Models for Virtual Try-on",
+        "url": "https://paperswithcode.com/paper/improving-diffusion-models-for-virtual-try-on",
+        "date": "2024-03-08"
     },
     {
-        "title": "Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction",
-        "url": "https://paperswithcode.com/paper/visual-autoregressive-modeling-scalable-image",
-        "date": "2024-04-03"
-    },
-    {
-        "title": "Mini-Gemini: Mining the Potential of Multi-modality Vision Language Models",
-        "url": "https://paperswithcode.com/paper/mini-gemini-mining-the-potential-of-multi",
-        "date": "2024-03-27"
-    },
-    {
-        "title": "Actions Speak Louder than Words: Trillion-Parameter Sequential Transducers for Generative Recommendations",
-        "url": "https://paperswithcode.com/paper/actions-speak-louder-than-words-trillion",
-        "date": "2024-02-27"
-    },
-    {
-        "title": "Assisting in Writing Wikipedia-like Articles From Scratch with Large Language Models",
-        "url": "https://paperswithcode.com/paper/assisting-in-writing-wikipedia-like-articles",
-        "date": "2024-02-22"
-    },
-    {
-        "title": "Solving Data Quality Problems with Desbordante: a Demo",
-        "url": "https://paperswithcode.com/paper/solving-data-quality-problems-with",
-        "date": "2023-07-27"
+        "title": "ESRL: Efficient Sampling-based Reinforcement Learning for Sequence Generation",
+        "url": "https://paperswithcode.com/paper/esrl-efficient-sampling-based-reinforcement",
+        "date": "2023-08-04"
     }
 ]
