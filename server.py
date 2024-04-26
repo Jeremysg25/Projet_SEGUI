@@ -2,6 +2,7 @@ import json
 from flask import Flask, Response, jsonify, request, abort
 from code_scraping import scrape_articles
 from collections import Counter
+from textblob import TextBlob
 
 app = Flask(__name__)
 
@@ -72,6 +73,44 @@ def article(number):
         )
 
         return Response(response_text, mimetype='text/plain')
+
+    except json.JSONDecodeError:
+        return Response("Error decoding JSON", status=500)
+    except FileNotFoundError:
+        return Response("File not found", status=500)
+    except Exception as e:
+        return Response(str(e), status=500)
+
+@app.route('/ml', defaults={'number': None})
+@app.route('/ml/<int:number>')
+def ml(number):
+    try:
+        with open('articles.json', 'r') as json_file:
+            data = json.load(json_file)
+
+        if number is None:
+            # Applique l'analyse de sentiment à tous les titres des articles
+            results = []
+            for idx, article in enumerate(data):
+                analysis = TextBlob(article['title'])
+                sentiment = analysis.sentiment
+                results.append(f"Article {idx + 1}: Sentiment = {sentiment.polarity:.2f}, Subjectivity = {sentiment.subjectivity:.2f}")
+            return Response("\n".join(results), mimetype='text/plain')
+        else:
+            # Applique l'analyse de sentiment au titre d'un article spécifique
+            if number < 1 or number > len(data):
+                abort(404)  # Article not found
+
+            article = data[number - 1]
+            analysis = TextBlob(article['title'])
+            sentiment = analysis.sentiment
+            response_text = (
+                f"Article {number}:\n"
+                f"Title: {article['title']}\n"
+                f"Sentiment: {sentiment.polarity:.2f}\n"
+                f"Subjectivity: {sentiment.subjectivity:.2f}\n"
+            )
+            return Response(response_text, mimetype='text/plain')
 
     except json.JSONDecodeError:
         return Response("Error decoding JSON", status=500)
