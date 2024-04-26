@@ -61,15 +61,19 @@ def article(number):
         
         article = data[number - 1]
         
-        # Récupération du titre et de la date avec gestion des valeurs par défaut
+        # Récupération des informations de l'article
         title = article.get('title', 'No title available')
         date = article.get('date', 'No date available')
+        url = article.get('url', 'No URL available')
+        abstract = article.get('abstract', 'No abstract available')
 
         # Formatage de la réponse en texte avec le format spécifié et des sauts de ligne
         response_text = (
             f"Article {number}:\n"
             f"Title: {title}\n"
             f"Date: {date}\n"
+            f"URL: {url}\n"
+            f"Abstract: {abstract}\n"
         )
 
         return Response(response_text, mimetype='text/plain')
@@ -80,6 +84,7 @@ def article(number):
         return Response("File not found", status=500)
     except Exception as e:
         return Response(str(e), status=500)
+
 
 @app.route('/ml', defaults={'number': None})
 @app.route('/ml/<int:number>')

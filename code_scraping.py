@@ -22,12 +22,15 @@ def scrape_articles():
             date_element = article.find('span', class_='author-name-text item-date-pub')
             date_text = date_element.text if date_element else None
             date = datetime.strptime(date_text, '%d %b %Y').date() if date_text else None
+            abstract_element = article.find('p', class_='item-strip-abstract')
+            abstract = abstract_element.get_text(strip=True) if abstract_element else 'No abstract available'
 
             if article_url and title and date:
                 articles_list.append({
                     'title': title,
                     'url': article_url,
-                    'date': date.isoformat() 
+                    'date': date.isoformat(),
+                    'abstract': abstract
                 })
 
         articles_list.sort(key=lambda x: x['date'], reverse=True)
@@ -36,13 +39,8 @@ def scrape_articles():
         print('Failed to retrieve the page')
 
 def save_articles_to_json(articles_list):
-    with open('articles.json', 'w', encoding='utf-8') as f: 
-        json.dump(articles_list, f, ensure_ascii=False, indent=4) 
+    with open('articles.json', 'w', encoding='utf-8') as f:
+        json.dump(articles_list, f, ensure_ascii=False, indent=4)
 
 articles = scrape_articles()
-save_articles_to_json(articles) 
-
-
-last_three_articles = articles[:3]
-for article in last_three_articles:
-    print(article)
+save_articles_to_json(articles)
