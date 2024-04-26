@@ -60,14 +60,10 @@ def article(number):
             abort(404)  # Article not found
         
         article = data[number - 1]
-        
-        # Récupération des informations de l'article
         title = article.get('title', 'No title available')
         date = article.get('date', 'No date available')
         url = article.get('url', 'No URL available')
         abstract = article.get('abstract', 'No abstract available')
-
-        # Formatage de la réponse en texte avec le format spécifié et des sauts de ligne
         response_text = (
             f"Article {number}:\n"
             f"Title: {title}\n"
@@ -94,7 +90,6 @@ def ml(number):
             data = json.load(json_file)
 
         if number is None:
-            # Applique l'analyse de sentiment à tous les titres des articles
             results = []
             for idx, article in enumerate(data):
                 analysis = TextBlob(article['title'])
@@ -102,10 +97,8 @@ def ml(number):
                 results.append(f"Article {idx + 1}: Sentiment = {sentiment.polarity:.2f}, Subjectivity = {sentiment.subjectivity:.2f}")
             return Response("\n".join(results), mimetype='text/plain')
         else:
-            # Applique l'analyse de sentiment au titre d'un article spécifique
             if number < 1 or number > len(data):
-                abort(404)  # Article not found
-
+                abort(404)
             article = data[number - 1]
             analysis = TextBlob(article['title'])
             sentiment = analysis.sentiment
