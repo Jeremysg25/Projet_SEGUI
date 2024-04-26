@@ -1,29 +1,31 @@
 # Esilv_Api_Project
 
 ### Project
-**Create an API for AI News Overview**
 
-This project involves creating an API that provides news related to Artificial Intelligence (AI). Each group will select an AI-related site (e.g., OpenAI blog) as their source.
+I choose the website PapersWithCode.com, which is a website that acts as a central platform for artificial intelligence (AI) and machine learning (ML) research. Its main objective is to provide a comprehensive search repository where users can find research articles, related source codes, as well as experimental results.
 
 ### Objective
 
-The goal is to fetch information from the chosen site, either by scraping or through an existing API. You will create several endpoints for different purposes:
+/get_data: This endpoint is mandatory because it scrapes the data to use the other endpoints.
+Example usage: http://127.0.0.1:5000/get_data
 
-    - /get_data: Fetches a list of articles from the site. Retrieving 5 articles might be sufficient.
-    - /articles: Displays information about the articles, including the article number, title, publication date, etc., but not the content itself.
-    - /article/<number>: Accesses the content of a specified article.
-    - /ml or /ml/<number>: Executes a machine learning script. Depending on the desired goal, it applies to either all articles or a single one. For example, sentiment analysis.
+/scraped_data: It shows all the data scraped from the website.
+Example usage: http://127.0.0.1:5000/scraped_data
 
-You can choose website about many subject like:
+/nb_articles: This endpoint retrieves the number of articles scraped from the website.
+Example usage: http://127.0.0.1:5000/
 
-    - Updates on new AI tools.
-    - News about image generation.
-    - Information on new models.
-    - Research papers, such as those from ArXiv or Google DeepMind.
+/date_articles: Retrieves the publication dates of all the articles scraped from the website.
+Example usage: http://127.0.0.1:5000/date_articles
 
-### Process
+/articles: Displays a formatted list of articles with their titles and publication dates. Each article is numbered for easy reference.
+Example usage: http://127.0.0.1:5000/
 
-    1. Each group should create a branch named after the names of the group members.
-    2. Inside the branch, create a working directory named after the chosen site.
-    3. Add a file named composition.txt that lists the members of the group.
-    4. Add a section below these rules to explain your project, describe the created endpoints and their uses, and provide examples.
+/articles/<number>: Fetches the full information of a specific article identified by its number. It returns the title, publication date, URL, and abstract of the article.
+Example usage: http://127.0.0.1:5000/articles/1 (to fetch the first article)
+
+/ml and /ml/<number>: Executes a machine learning script to perform sentiment analysis on the fetched articles. It can analyze either all retrieved articles or a single specified one. The sentiment analysis results include the polarity and subjectivity of the article's title.
+Example usage: http://127.0.0.1:5000/ml (for all articles)
+               http://127.0.0.1:5000/ml/1 (for the first article)
+
+These endpoints provide a comprehensive interface for interacting with AI news data, offering functionalities such as retrieving articles, obtaining article metadata, reading full articles, and performing sentiment analysis on article titles.
