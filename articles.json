@@ -1,39 +1,33 @@
 [
     {
+        "title": "Make Your LLM Fully Utilize the Context",
+        "url": "https://paperswithcode.com/paper/make-your-llm-fully-utilize-the-context",
+        "date": "2024-04-25",
+        "abstract": "While many contemporary large language models (LLMs) can process lengthy input, they still struggle to fully utilize information within the long context, known as the lost-in-the-middle challenge."
+    },
+    {
+        "title": "ConsistentID: Portrait Generation with Multimodal Fine-Grained Identity Preserving",
+        "url": "https://paperswithcode.com/paper/consistentid-portrait-generation-with",
+        "date": "2024-04-25",
+        "abstract": "ConsistentID comprises two key components: a multimodal facial prompt generator that combines facial features, corresponding facial descriptions and the overall facial context to enhance precision in facial details, and an ID-preservation network optimized through the facial attention localization strategy, aimed at preserving ID consistency in facial regions."
+    },
+    {
+        "title": "CatLIP: CLIP-level Visual Recognition Accuracy with 2.7x Faster Pre-training on Web-scale Image-Text Data",
+        "url": "https://paperswithcode.com/paper/catlip-clip-level-visual-recognition-accuracy",
+        "date": "2024-04-24",
+        "abstract": "Contrastive learning has emerged as a transformative method for learning effective visual representations through the alignment of image and text embeddings."
+    },
+    {
+        "title": "FlowMap: High-Quality Camera Poses, Intrinsics, and Depth via Gradient Descent",
+        "url": "https://paperswithcode.com/paper/flowmap-high-quality-camera-poses-intrinsics",
+        "date": "2024-04-23",
+        "abstract": "This paper introduces FlowMap, an end-to-end differentiable method that solves for precise camera poses, camera intrinsics, and per-frame dense depth of a video sequence."
+    },
+    {
         "title": "ID-Animator: Zero-Shot Identity-Preserving Human Video Generation",
         "url": "https://paperswithcode.com/paper/id-animator-zero-shot-identity-preserving",
         "date": "2024-04-23",
         "abstract": "Based on this pipeline, a random face reference training method is further devised to precisely capture the ID-relevant embeddings from reference images, thus improving the fidelity and generalization capacity of our model for ID-specific video generation."
-    },
-    {
-        "title": "OpenELM: An Efficient Language Model Family with Open-source Training and Inference Framework",
-        "url": "https://paperswithcode.com/paper/openelm-an-efficient-language-model-family",
-        "date": "2024-04-22",
-        "abstract": "To this end, we release OpenELM, a state-of-the-art open language model."
-    },
-    {
-        "title": "SnapKV: LLM Knows What You are Looking for Before Generation",
-        "url": "https://paperswithcode.com/paper/snapkv-llm-knows-what-you-are-looking-for",
-        "date": "2024-04-22",
-        "abstract": "Specifically, SnapKV achieves a consistent decoding speed with a 3. 6x increase in generation speed and an 8. 2x enhancement in memory efficiency compared to baseline when processing inputs of 16K tokens."
-    },
-    {
-        "title": "CyberSecEval 2: A Wide-Ranging Cybersecurity Evaluation Suite for Large Language Models",
-        "url": "https://paperswithcode.com/paper/cyberseceval-2-a-wide-ranging-cybersecurity",
-        "date": "2024-04-19",
-        "abstract": "We present BenchmarkName, a novel benchmark to quantify LLM security risks and capabilities."
-    },
-    {
-        "title": "AutoCrawler: A Progressive Understanding Web Agent for Web Crawler Generation",
-        "url": "https://paperswithcode.com/paper/autocrawler-a-progressive-understanding-web",
-        "date": "2024-04-19",
-        "abstract": "We propose AutoCrawler, a two-stage framework that leverages the hierarchical structure of HTML for progressive understanding."
-    },
-    {
-        "title": "Dynamic Generation of Personalities with Large Language Models",
-        "url": "https://paperswithcode.com/paper/dynamic-generation-of-personalities-with",
-        "date": "2024-04-10",
-        "abstract": "We propose a new metric to assess personality generation capability based on this evaluation method."
     },
     {
         "title": "InstantMesh: Efficient 3D Mesh Generation from a Single Image with Sparse-view Large Reconstruction Models",
@@ -48,9 +42,15 @@
         "abstract": "Finally, we present a customization method using a pair of person-garment images, which significantly improves fidelity and authenticity."
     },
     {
-        "title": "ESRL: Efficient Sampling-based Reinforcement Learning for Sequence Generation",
-        "url": "https://paperswithcode.com/paper/esrl-efficient-sampling-based-reinforcement",
-        "date": "2023-08-04",
-        "abstract": "Applying Reinforcement Learning (RL) to sequence generation models enables the direct optimization of long-term rewards (\\textit{e. g.,} BLEU and human feedback), but typically requires large-scale sampling over a space of action sequences."
+        "title": "X-LoRA: Mixture of Low-Rank Adapter Experts, a Flexible Framework for Large Language Models with Applications in Protein Mechanics and Molecular Design",
+        "url": "https://paperswithcode.com/paper/x-lora-mixture-of-low-rank-adapter-experts-a",
+        "date": "2024-02-11",
+        "abstract": "Starting with a set of pre-trained LoRA adapters, our gating strategy uses the hidden states to dynamically mix adapted layers, allowing the resulting X-LoRA model to draw upon different capabilities and create never-before-used deep layer-wise combinations to solve tasks."
+    },
+    {
+        "title": "OpenVoice: Versatile Instant Voice Cloning",
+        "url": "https://paperswithcode.com/paper/openvoice-versatile-instant-voice-cloning",
+        "date": "2023-12-03",
+        "abstract": "The voice styles are not directly copied from and constrained by the style of the reference speaker."
     }
 ]
