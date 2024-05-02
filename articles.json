@@ -1,15 +1,21 @@
 [
     {
-        "title": "Make Your LLM Fully Utilize the Context",
-        "url": "https://paperswithcode.com/paper/make-your-llm-fully-utilize-the-context",
+        "title": "How Far Are We to GPT-4V? Closing the Gap to Commercial Multimodal Models with Open-Source Suites",
+        "url": "https://paperswithcode.com/paper/how-far-are-we-to-gpt-4v-closing-the-gap-to",
         "date": "2024-04-25",
-        "abstract": "While many contemporary large language models (LLMs) can process lengthy input, they still struggle to fully utilize information within the long context, known as the lost-in-the-middle challenge."
+        "abstract": "Compared to both open-source and proprietary models, InternVL 1. 5 shows competitive performance, achieving state-of-the-art results in 8 of 18 benchmarks."
     },
     {
         "title": "ConsistentID: Portrait Generation with Multimodal Fine-Grained Identity Preserving",
         "url": "https://paperswithcode.com/paper/consistentid-portrait-generation-with",
         "date": "2024-04-25",
         "abstract": "ConsistentID comprises two key components: a multimodal facial prompt generator that combines facial features, corresponding facial descriptions and the overall facial context to enhance precision in facial details, and an ID-preservation network optimized through the facial attention localization strategy, aimed at preserving ID consistency in facial regions."
+    },
+    {
+        "title": "Make Your LLM Fully Utilize the Context",
+        "url": "https://paperswithcode.com/paper/make-your-llm-fully-utilize-the-context",
+        "date": "2024-04-25",
+        "abstract": "While many contemporary large language models (LLMs) can process lengthy input, they still struggle to fully utilize information within the long context, known as the lost-in-the-middle challenge."
     },
     {
         "title": "CatLIP: CLIP-level Visual Recognition Accuracy with 2.7x Faster Pre-training on Web-scale Image-Text Data",
@@ -24,22 +30,16 @@
         "abstract": "This paper introduces FlowMap, an end-to-end differentiable method that solves for precise camera poses, camera intrinsics, and per-frame dense depth of a video sequence."
     },
     {
-        "title": "ID-Animator: Zero-Shot Identity-Preserving Human Video Generation",
-        "url": "https://paperswithcode.com/paper/id-animator-zero-shot-identity-preserving",
-        "date": "2024-04-23",
-        "abstract": "Based on this pipeline, a random face reference training method is further devised to precisely capture the ID-relevant embeddings from reference images, thus improving the fidelity and generalization capacity of our model for ID-specific video generation."
-    },
-    {
-        "title": "InstantMesh: Efficient 3D Mesh Generation from a Single Image with Sparse-view Large Reconstruction Models",
-        "url": "https://paperswithcode.com/paper/instantmesh-efficient-3d-mesh-generation-from",
-        "date": "2024-04-10",
-        "abstract": "We present InstantMesh, a feed-forward framework for instant 3D mesh generation from a single image, featuring state-of-the-art generation quality and significant training scalability."
-    },
-    {
         "title": "Improving Diffusion Models for Virtual Try-on",
         "url": "https://paperswithcode.com/paper/improving-diffusion-models-for-virtual-try-on",
         "date": "2024-03-08",
         "abstract": "Finally, we present a customization method using a pair of person-garment images, which significantly improves fidelity and authenticity."
+    },
+    {
+        "title": "AgentScope: A Flexible yet Robust Multi-Agent Platform",
+        "url": "https://paperswithcode.com/paper/agentscope-a-flexible-yet-robust-multi-agent",
+        "date": "2024-02-21",
+        "abstract": "With the rapid advancement of Large Language Models (LLMs), significant progress has been made in multi-agent applications."
     },
     {
         "title": "X-LoRA: Mixture of Low-Rank Adapter Experts, a Flexible Framework for Large Language Models with Applications in Protein Mechanics and Molecular Design",

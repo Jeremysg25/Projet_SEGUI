@@ -18,7 +18,10 @@ def get_data():
               /scraped_data : Show the data scrapped 
               /date_articles : Show the dates of all the articles
               /articles : Show the list of articles on the website
-              /articles/<number> : Choose one article and show the info'''
+              /articles/<number> : Choose one article and show the info
+              /ml : Sentiment and subjectivity analysis
+              /ml/<number> : Choose one article and show the info'''
+                            
     return Response(text, mimetype='text/plain')
 
 @app.route('/nb_articles')  
@@ -57,7 +60,7 @@ def article(number):
             data = json.load(json_file)
         
         if number < 1 or number > len(data):
-            abort(404)  # Article not found
+            abort(404)
         
         article = data[number - 1]
         title = article.get('title', 'No title available')
