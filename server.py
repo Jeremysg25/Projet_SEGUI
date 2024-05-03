@@ -1,7 +1,6 @@
 import json
-from flask import Flask, Response, jsonify, request, abort
+from flask import Flask, Response, jsonify, abort
 from code_scraping import scrape_articles
-from collections import Counter
 from textblob import TextBlob
 
 app = Flask(__name__)
@@ -34,34 +33,31 @@ def get_nb_articles():
 def get_scraped_data():
     with open('articles.json') as json_file:
         data = json.load(json_file)
-    return jsonify(data)
+        return jsonify(data)
 
 @app.route('/date_articles')  
 def get_date_articles():
     with open('articles.json') as json_file:
         data = json.load(json_file)
-
-    dates = [article['date'] for article in data]
-    return {'Number of articles': len(data), 'Dates': dates}
+        dates = [article['date'] for article in data]
+        return {'Number of articles': len(data), 'Dates': dates}
 
 @app.route('/articles')
 def articles():
     with open('articles.json', 'r') as json_file:
         data = json.load(json_file)
-    articles_text = ""
-    for idx, article in enumerate(data):
-        articles_text += f"Article {idx + 1}: Title: {article['title']}, Date: {article['date']}\n"
-    return Response(articles_text, mimetype='text/plain')
+        articles_text = ""
+        for idx, article in enumerate(data):
+            articles_text += f"Article {idx + 1}: Title: {article['title']}, Date: {article['date']}\n"
+        return Response(articles_text, mimetype='text/plain')
 
 @app.route('/articles/<int:number>')
 def article(number):
     try:
         with open('articles.json', 'r') as json_file:
-            data = json.load(json_file)
-        
+            data = json.load(json_file)        
         if number < 1 or number > len(data):
-            abort(404)
-        
+            abort(404)        
         article = data[number - 1]
         title = article.get('title', 'No title available')
         date = article.get('date', 'No date available')
@@ -76,7 +72,6 @@ def article(number):
         )
 
         return Response(response_text, mimetype='text/plain')
-
     except json.JSONDecodeError:
         return Response("Error decoding JSON", status=500)
     except FileNotFoundError:
